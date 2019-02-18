@@ -6,25 +6,30 @@
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items>
-            <v-btn flat>
-                <v-icon>mdi-timeline</v-icon>TimeLines
+            <v-btn flat v-on:click="$vuetify.goTo('#timeline', scrollOpt)">
+                <v-icon>mdi-timeline</v-icon>TimeLine
             </v-btn>
-            <v-btn flat>
-                <v-icon>mdi-face-profile</v-icon>Profiles
+            <v-btn flat v-on:click="$vuetify.goTo('#profile', scrollOpt)">
+                <v-icon>mdi-face-profile</v-icon>Profile
             </v-btn>
-            <v-btn flat>
-                <v-icon>mdi-new-box</v-icon>New Blogs
+            <v-btn flat v-on:click="$vuetify.goTo('#blog', scrollOpt)">
+                <v-icon>mdi-new-box</v-icon>New Blog
             </v-btn>
         </v-toolbar-items>
     </v-toolbar>
 
     <v-content>
+        <div id="top"></div>
         <PhotoGallery />
-        <TimeLine />
-        <Profile />
-        <Blog />
+        <TimeLine id="timeline" />
+        <Profile id="profile" />
+        <Blog id="blog" />
     </v-content>
-
+    <v-layout justify-center>
+        <v-btn color="pink" dark fab v-on:click="$vuetify.goTo('#top', scrollOpt)">
+            <v-icon>mdi-arrow-up</v-icon>
+        </v-btn>
+    </v-layout>
     <Footer />
 </v-app>
 </template>
@@ -48,7 +53,11 @@ export default {
     },
     data() {
         return {
-            //
+            scrollOpt: {
+                duration: 1500,
+                offset: 10,
+                easing: 'easeInOutCubic'
+            }
         }
     }
 }
