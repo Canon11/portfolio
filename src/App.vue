@@ -19,6 +19,8 @@
         <Profile />
         <Blog />
     </v-content>
+
+    <Footer />
 </v-app>
 </template>
 
@@ -27,6 +29,8 @@ import PhotoGallery from './components/PhotoGallery'
 import TimeLine from './components/TimeLine'
 import Profile from './components/Profile'
 import Blog from './components/Blog'
+import Footer from './components/Footer'
+import '@mdi/font/css/materialdesignicons.css'
 
 export default {
     name: 'App',
@@ -34,7 +38,8 @@ export default {
         PhotoGallery,
         TimeLine,
         Profile,
-        Blog
+        Blog,
+        Footer
     },
     data() {
         return {
