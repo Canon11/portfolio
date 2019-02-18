@@ -1,7 +1,7 @@
 <template>
-<v-container>
-    <div class="display-2 font-weight-regular font-italic text-sm-center">Blogs</div>
-    <v-layout row justify-space-around>
+<div class="my-5">
+    <div class="display-2 font-weight-regular font-italic text-sm-center">New Blog</div>
+    <v-layout row justify-space-around class="mt-4">
         <v-flex sm3 v-for="(blog, i) in blogs" :key="i">
             <v-card>
                 <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px">
@@ -29,7 +29,7 @@
             </v-card>
         </v-flex>
     </v-layout>
-</v-container>
+</div>
 </template>
 
 <script>

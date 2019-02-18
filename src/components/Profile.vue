@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="my-5">
     <div class="display-2 font-weight-regular font-italic text-xs-center">Profile</div>
-    <v-layout justify-center>
+    <v-layout justify-center class="mt-4">
         <v-flex sm8>
             <v-card>
                 <v-card-title>MyProfile</v-card-title>

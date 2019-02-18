@@ -19,14 +19,17 @@
     </v-toolbar>
 
     <v-content>
-        <div id="top"></div>
-        <PhotoGallery />
-        <TimeLine id="timeline" />
-        <Profile id="profile" />
-        <Blog id="blog" />
+        <PhotoGallery id="photogallery" />
+        <v-container>
+            <TimeLine id="timeline" />
+            <v-divider></v-divider>
+            <Profile id="profile" />
+            <v-divider></v-divider>
+            <Blog id="blog" />
+        </v-container>
     </v-content>
     <v-layout justify-center>
-        <v-btn color="pink" dark fab v-on:click="$vuetify.goTo('#top', scrollOpt)">
+        <v-btn color="pink" dark fab v-on:click="$vuetify.goTo('#photogallery', scrollOpt)">
             <v-icon>mdi-arrow-up</v-icon>
         </v-btn>
     </v-layout>

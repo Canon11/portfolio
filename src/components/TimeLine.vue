@@ -1,7 +1,7 @@
 <template>
-<v-container>
+<div class="my-5">
     <div class="display-2 font-weight-regular font-italic text-sm-center">TimeLine</div>
-    <v-timeline>
+    <v-timeline class="mt-4">
         <v-timeline-item v-for="(year, i) in years" :key="i" :color="year.color" small>
             <span slot="opposite" :class="`headline font-weight-bold ${year.color}--text`" v-text="year.year"></span>
             <v-card class="elevation-2">
@@ -10,7 +10,7 @@
             </v-card>
         </v-timeline-item>
     </v-timeline>
-</v-container>
+</div>
 </template>
 
 <script>
