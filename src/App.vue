@@ -1,15 +1,20 @@
 <template>
 <v-app>
-    <v-toolbar app>
+    <v-toolbar app dark class="indigo">
         <v-toolbar-title class="headline">
             <span>Canon's Page</span>
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items>
-            <v-btn flat>Images</v-btn>
-            <v-btn flat>TimeLines</v-btn>
-            <v-btn flat>Profiles</v-btn>
-            <v-btn flat>New Blogs</v-btn>
+            <v-btn flat>
+                <v-icon>mdi-timeline</v-icon>TimeLines
+            </v-btn>
+            <v-btn flat>
+                <v-icon>mdi-face-profile</v-icon>Profiles
+            </v-btn>
+            <v-btn flat>
+                <v-icon>mdi-new-box</v-icon>New Blogs
+            </v-btn>
         </v-toolbar-items>
     </v-toolbar>
 
