@@ -19,7 +19,7 @@
     </v-toolbar>
 
     <v-content>
-        <PhotoGallery id="photogallery" />
+        <Eyecatch id="ehecatch" />
         <v-container>
             <TimeLine id="timeline" />
             <v-divider></v-divider>
@@ -29,7 +29,7 @@
         </v-container>
     </v-content>
     <v-layout justify-center>
-        <v-btn color="pink" dark fab v-on:click="$vuetify.goTo('#photogallery', scrollOpt)">
+        <v-btn color="pink" dark fab v-on:click="$vuetify.goTo('#eyecatch', scrollOpt)">
             <v-icon>mdi-arrow-up</v-icon>
         </v-btn>
     </v-layout>
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import PhotoGallery from './components/PhotoGallery'
+import Eyecatch from './components/Eyecatch'
 import TimeLine from './components/TimeLine'
 import Profile from './components/Profile'
 import Blog from './components/Blog'
@@ -48,7 +48,7 @@ import '@mdi/font/css/materialdesignicons.css'
 export default {
     name: 'App',
     components: {
-        PhotoGallery,
+        Eyecatch,
         TimeLine,
         Profile,
         Blog,
