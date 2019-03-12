@@ -7,13 +7,16 @@
       <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-btn flat v-on:click="$vuetify.goTo('#profile', scrollOpt)">
-          <v-icon>mdi-face-profile</v-icon>Profile
+          <v-icon>mdi-face-profile</v-icon>
+          <span class="ml-1">Profile</span>
         </v-btn>
         <v-btn flat v-on:click="$vuetify.goTo('#timeline', scrollOpt)">
-          <v-icon>mdi-timeline</v-icon>TimeLine
+          <v-icon>mdi-timeline</v-icon>
+          <span class="ml-1">TimeLine</span>
         </v-btn>
         <v-btn flat v-on:click="$vuetify.goTo('#blog', scrollOpt)">
-          <v-icon>mdi-new-box</v-icon>New Blog
+          <v-icon>mdi-new-box</v-icon>
+          <span class="ml-1">New Blog</span>
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
