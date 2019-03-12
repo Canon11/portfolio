@@ -42,11 +42,11 @@ export default {
         source: "https://murattyblog.com/vscode_install"
       },
       {
-        title: "AWSソリューションアーキテクトアソシエイトに合格しました！",
+        title: "【Linux】MacでUbuntuのブートUSBを作成する方法",
         description: "desc1",
         image:
-          "https://murattyblog.com/wp-content/uploads/2019/02/eyecatch.037.png",
-        source: "https://murattyblog.com/aws_saa"
+          "https://murattyblog.com/wp-content/uploads/2019/02/eyecatch.036.png",
+        source: "https://murattyblog.com/boot_usb"
       }
     ]
   })
