@@ -28,7 +28,6 @@
     <v-layout justify-center class="mt-4" v-if="categoryShowNum == 1">
       <v-flex>
         <v-card class="px-2 py-2">
-          <div class="display-1 font-weight-regular text-xs-center font-italic">Skills</div>
           <div class="text-xs-center">
             <div v-for="(skill, index) in skills" :key="index">
               <div class="title font-weight-light font-italic mt-3 mb-1">{{ skill.title }}</div>
@@ -45,27 +44,27 @@
     </v-layout>
 
     <v-layout row justify-space-around class="mt-4" v-if="categoryShowNum == 2">
-      <v-flex sm3 v-for="(created, j) in createds" :key="j">
+      <v-flex sm3 v-for="(work, j) in works" :key="j">
         <v-card>
-          <v-img :src="created.image" height="200px"></v-img>
+          <v-img :src="work.image" height="200px"></v-img>
 
           <v-card-title primary-title>
             <div>
-              <div class="headline">{{ created.title }}</div>
-              <span class="grey--text">{{ created.subtitle }}</span>
+              <div class="headline">{{ work.title }}</div>
+              <span class="grey--text">{{ work.subtitle }}</span>
             </div>
           </v-card-title>
 
           <v-card-actions>
-            <v-btn flat color="purple" :href="created.source" target="_blank">Explore</v-btn>
+            <v-btn flat color="purple" :href="work.source" target="_blank">Explore</v-btn>
             <v-spacer></v-spacer>
-            <v-btn icon @click="created.show = !created.show">
-              <v-icon>{{ created.show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
+            <v-btn icon @click="work.show = !work.show">
+              <v-icon>{{ work.show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
             </v-btn>
           </v-card-actions>
 
           <v-slide-y-transition>
-            <v-card-text v-show="created.show">{{ created.description }}</v-card-text>
+            <v-card-text v-show="work.show">{{ work.description }}</v-card-text>
           </v-slide-y-transition>
         </v-card>
       </v-flex>
@@ -73,7 +72,7 @@
 
     <div class="text-xs-center">
       <v-menu offset-y>
-        <v-btn slot="activator" color="primary" dark>Change</v-btn>
+        <v-btn slot="activator" color="primary" dark>{{ items[categoryShowNum] }} (Change)</v-btn>
         <v-list>
           <v-list-tile v-for="(title, index) in items" :key="index" @click="selectCategory(index)">
             <v-list-tile-title>{{ title }}</v-list-tile-title>
@@ -88,7 +87,7 @@
 export default {
   data: () => ({
     categoryShowNum: 0,
-    items: ["About", "Skills", "Created"],
+    items: ["About", "Skills", "Works"],
     skills: [
       {
         title: "Language",
@@ -132,7 +131,7 @@ export default {
         ]
       }
     ],
-    createds: [
+    works: [
       {
         title: "YAlert",
         subtitle: "Chrome Extention",
