@@ -1,7 +1,7 @@
 <template>
   <div class="my-5">
-    <div class="display-2 font-weight-regular font-italic text-xs-center">Kazuma Murata</div>
-    <div class="title font-weight-light font-italic text-xs-center">Back end engineer</div>
+    <div class="display-2 font-weight-regular font-italic text-xs-center">Muratty</div>
+    <div class="title font-weight-light font-italic text-xs-center">Backend engineer</div>
     <v-layout justify-center class="mt-4" v-if="categoryShowNum == 0">
       <v-flex sm5>
         <img width="100%" :src="require('../assets/muratty_icon.png')">
@@ -13,9 +13,9 @@
           </div>
           <div class="mt-4">
             <p>24歳、山梨県出身。</p>
-            <p>筑波大学で4年間、コンピュータサイエンスを学び、ヒューマンインターフェース分野の研究を行う。2017年3月に学部を卒業し、4月に新卒でWeb系ベンチャー企業に入社。ソーシャルゲームのバックエンドエンジニアとして2本の新規ゲームリリースを経験。インフラ構築・運用から、規格との連携、新規イベント開発、新規機能開発までバックエンドの幅広い分野を担当。</p>
+            <p>筑波大学でコンピュータサイエンスを学び、ヒューマンインターフェース分野の研究を行う。2017年3月に学部を卒業し、4月に新卒でWeb系ベンチャー企業に入社。ソーシャルゲームのバックエンドエンジニアとして2本の新規ゲームリリースを経験。インフラ構築・運用から、規格との連携、新規イベント開発、新規機能開発までバックエンドの幅広い分野を担当。</p>
             <p>2018年5月に退職をし、学生時代から共にサービスを開発していた先輩と3人で起業。受託開発や自社システム開発などを行いつつも新規事業に向けて格闘(現在進行形)。</p>
-            <p>また、その傍らでプログラミングの講師・メンターとしても活動中。</p>
+            <p>また、傍らでプログラミングの講師・メンターとしても活動中。</p>
             <p>趣味はダンス・ピアノ・バイオハザード。</p>
             <p>
               <a href="https://murattyblog.com/murattyprof" target="_blank">詳細はこちら</a>
